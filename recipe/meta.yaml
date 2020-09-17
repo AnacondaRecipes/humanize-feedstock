@@ -14,13 +14,14 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
+  build:
+    - setuptools
   host:
     - pip
     - python
     - setuptools
 
   run:
-    - pkg_resources
     - python
 
 test:
