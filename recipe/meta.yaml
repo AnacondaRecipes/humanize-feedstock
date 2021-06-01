@@ -18,6 +18,8 @@ requirements:
     - python >=3.6
     - pip
     - setuptools_scm
+    - setuptools
+    - wheel
   run:
     - python >=3.6
 
@@ -32,8 +34,11 @@ test:
 about:
   home: https://github.com/jmoiron/humanize
   license: MIT
+  license_family: MIT
   license_file: LICENCE
   summary: Python humanize utilities
+  dev_url: https://github.com/jmoiron/humanize
+  doc_url: https://github.com/jmoiron/humanize/blob/master/docs/index.md
 
 extra:
   recipe-maintainers:
