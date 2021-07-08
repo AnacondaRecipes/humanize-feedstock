@@ -14,11 +14,12 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
-    - setuptools_scm
-    - setuptools
+    - setuptools_scm >=3.4
+    - toml
+    - setuptools >=42
     - wheel
   run:
     - python >=3.6
