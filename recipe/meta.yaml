@@ -14,14 +14,14 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
     - setuptools_scm >=3.4
     - toml
     - setuptools >=42
     - wheel
   run:
-    - python >=3.6
+    - python
 
 test:
   requires:
