@@ -40,8 +40,8 @@ about:
     This modest package contains various common humanization utilities, 
     like turning a number into a fuzzy human-readable duration ("3 minutes ago") 
     or into a human-readable size or throughput.
-  dev_url: https://github.com/jmoiron/humanize
-  doc_url: https://github.com/jmoiron/humanize/blob/master/docs/index.md
+  dev_url: https://github.com/python-humanize/humanize
+  doc_url: https://humanize.readthedocs.io/en/stable/
 
 extra:
   recipe-maintainers:
