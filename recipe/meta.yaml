@@ -37,9 +37,9 @@ about:
   license_file: LICENCE
   summary: Python humanize utilities
   description: |
-  This modest package contains various common humanization utilities, 
-  like turning a number into a fuzzy human-readable duration ("3 minutes ago") 
-  or into a human-readable size or throughput.
+    This modest package contains various common humanization utilities, 
+    like turning a number into a fuzzy human-readable duration ("3 minutes ago") 
+    or into a human-readable size or throughput.
   dev_url: https://github.com/jmoiron/humanize
   doc_url: https://github.com/jmoiron/humanize/blob/master/docs/index.md
 
