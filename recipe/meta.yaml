@@ -20,7 +20,7 @@ requirements:
     - setuptools >=42
     - wheel
   run:
-    - python >=3.6
+    - python
 
 test:
   requires:
