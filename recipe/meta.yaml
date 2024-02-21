@@ -9,8 +9,7 @@ source:
   sha256: ad83016fae2453a7486f5be5dba8e19883020c77f6c12c63702f3b6c15ae3c5e 
 build:
   number: 0
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-build-isolation --no-deps -vv
 
 requirements:
   host:
@@ -37,6 +36,10 @@ about:
   license_family: MIT
   license_file: LICENCE
   summary: Python humanize utilities
+  description: |
+  This modest package contains various common humanization utilities, 
+  like turning a number into a fuzzy human-readable duration ("3 minutes ago") 
+  or into a human-readable size or throughput.
   dev_url: https://github.com/jmoiron/humanize
   doc_url: https://github.com/jmoiron/humanize/blob/master/docs/index.md
 
