@@ -16,7 +16,6 @@ requirements:
     - python
     - pip
     - setuptools_scm
-    - toml
     - setuptools
     - wheel
   run:
