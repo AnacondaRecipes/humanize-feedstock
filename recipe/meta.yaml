@@ -1,4 +1,4 @@
-{% set version = "3.10.0" %}
+{% set version = "4.12.2" %}
 
 package:
   name: humanize
@@ -6,23 +6,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/h/humanize/humanize-{{ version }}.tar.gz
-  sha256: b2413730ce6684f85e0439a5b80b8f402e09f03e16ab8023d1da758c6ff41148
+  sha256: ce0715740e9caacc982bb89098182cf8ded3552693a433311c6a4ce6f4e12a2c
 
 build:
   number: 0
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
+  skip: true  # [py<39]
 
 requirements:
   host:
-    - python >=3.6
+    - python
     - pip
-    - setuptools_scm >=3.4
-    - toml
-    - setuptools >=42
     - wheel
+    - hatch-vcs
+    - hatchling >=1.27
   run:
-    - python >=3.6
+    - python
 
 test:
   requires:
@@ -33,13 +32,17 @@ test:
     - humanize
 
 about:
-  home: https://github.com/jmoiron/humanize
+  home: https://github.com/python-humanize/humanize
   license: MIT
   license_family: MIT
   license_file: LICENCE
   summary: Python humanize utilities
-  dev_url: https://github.com/jmoiron/humanize
-  doc_url: https://github.com/jmoiron/humanize/blob/master/docs/index.md
+  description: |
+    humanize is a Python library that provides a set of utilities for converting
+    data into human-readable formats. It includes functions for formatting
+    numbers, dates, and times in a way that is easy to read and understand.
+  dev_url: https://github.com/python-humanize/humanize
+  doc_url: https://github.com/python-humanize/humanize/blob/main/docs/index.md
 
 extra:
   recipe-maintainers:
