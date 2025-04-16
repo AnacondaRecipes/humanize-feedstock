@@ -1,11 +1,12 @@
 {% set version = "4.12.2" %}
+{% set name = "humanize" %}
 
 package:
-  name: humanize
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/h/humanize/humanize-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ce0715740e9caacc982bb89098182cf8ded3552693a433311c6a4ce6f4e12a2c
 
 build:
@@ -42,7 +43,7 @@ about:
     data into human-readable formats. It includes functions for formatting
     numbers, dates, and times in a way that is easy to read and understand.
   dev_url: https://github.com/python-humanize/humanize
-  doc_url: https://github.com/python-humanize/humanize/blob/main/docs/index.md
+  doc_url: https://humanize.readthedocs.io/
 
 extra:
   recipe-maintainers:
