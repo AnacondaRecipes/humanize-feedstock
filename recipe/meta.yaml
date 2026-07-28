@@ -36,7 +36,6 @@ test:
   requires:
     - pip
     - pytest >=9
-    - pytest-benchmark
     - pytest-codspeed
     - pytest-cov
     - freezegun
